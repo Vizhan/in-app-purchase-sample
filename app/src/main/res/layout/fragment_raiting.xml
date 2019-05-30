@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="app-catalog" />
+
+    <com.willy.ratingbar.ScaleRatingBar
+        android:id="@+id/srbRate"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:srb_clickable="false"
+        app:srb_drawableEmpty="@drawable/ic_star_silver"
+        app:srb_drawableFilled="@drawable/ic_star_gold"
+        app:srb_isIndicator="false"
+        app:srb_numStars="5"
+        app:srb_scrollable="false"
+        app:srb_starHeight="20dp"
+        app:srb_starPadding="8dp"
+        app:srb_starWidth="20sp"
+        app:srb_stepSize="0.5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSpoil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="spoil rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/srbRate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

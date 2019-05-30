@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/ratingFragment">
+
+    <fragment
+        android:id="@+id/purchaseFragment"
+        android:name="com.lanars.purchase.purchase.PurchaseFragment"
+        android:label="PurchaseFragment" />
+
+    <fragment
+        android:id="@+id/ratingFragment"
+        android:name="com.lanars.purchase.rating.RatingFragment"
+        android:label="RatingFragment" />
+
+    <action
+        android:id="@+id/action_to_purchaseFragment"
+        app:destination="@id/purchaseFragment" />
+
+</navigation>
